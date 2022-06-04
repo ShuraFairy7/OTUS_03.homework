@@ -1,4 +1,4 @@
-#define BOOST_TEST_MODULE test_version
+﻿#define BOOST_TEST_MODULE test_version
 
 #include "lib.h"
 #include "print_ip.h"
