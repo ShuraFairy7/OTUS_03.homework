@@ -11,7 +11,7 @@ option(WITH_BOOST_TEST "Whether to build Boost test" ON)
 
 configure_file(version.h.in version.h)
 
-add_executable(print_ip main.cpp print_ip.cpp)
+add_executable(print_ip main.cpp)
 add_library(print_ip_lib lib.cpp)
 
 set_target_properties(print_ip print_ip_lib PROPERTIES
@@ -32,7 +32,7 @@ if(WITH_BOOST_TEST)
     add_executable(test_version test_version.cpp)
 
     set_target_properties(test_version PROPERTIES
-        CXX_STANDARD 14
+        CXX_STANDARD 17
         CXX_STANDARD_REQUIRED ON
     )
 
