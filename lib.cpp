@@ -1,4 +1,4 @@
-﻿#include "lib.h"
+#include "lib.h"
 #include "version.h"
 //Test
 int version() {
